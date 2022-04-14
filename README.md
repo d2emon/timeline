@@ -1,2 +1,2 @@
-# timeline-1
+# timeline
 Timeline with react
