@@ -11,19 +11,19 @@ services:
     depends_on:
       - mongo
     env_file:
-      - ./env/dev.env
+      - ./env/back.dev.env
     ports:
       - 4000:4000
     volumes:
       - ./back/node_modules:/app/node_modules:rw
       - ./back/package.json:/app/package.json:rw
-      - ./back/.eslintrc/json:/app/.eslintrc/json:rw
+      - ./back/.eslintrc:/app/.eslintrc:rw
       - ./back/public:/app/public:rw
       - ./back/src:/app/src:rw
   front:
     build: ./front
     env_file:
-      - ./env/dev.env
+      - ./env/front.dev.env
     ports:
       - 3000:3000
     # restart: always

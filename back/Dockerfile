@@ -14,7 +14,7 @@ COPY dist ./dist
 # COPY public ./public
 COPY src ./
 COPY tsconfig.json ./
-COPY .eslintrc.json ./
+COPY .eslintrc ./
 
 ENV APP_NAME timeline:server
 ENV DEBUG timeline:*
