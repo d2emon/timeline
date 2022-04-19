@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './MyComponent/MyComponent';
+import MyComponent from './components/MyComponent';
+import EventsFetcher from './components/EventsFetcher';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <EventsFetcher />
       <MyComponent />
     </div>
   );

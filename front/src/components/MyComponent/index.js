@@ -54,10 +54,12 @@ class MyComponent extends Component {
     }
 
     delete (id) {
+        /*
         if (confirm('Do you want to delete?')) {
             Promise.resolve();
             document.location.reload();
         }
+        */
     }
 
     edit (id) {
